@@ -8,6 +8,8 @@ import { Toaster } from 'react-hot-toast'
 import { useAuth } from './context/authProvider'
 import SubmissionForm from './components/submissionForm'
 import AboutUs from './components/About'
+import ProfileUpdate from './components/profileUpdate'
+
 
 
 
@@ -24,6 +26,9 @@ export default function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/submission" element={<SubmissionForm />} />
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/updateProfile" element={<ProfileUpdate />} />
+        
+
 
       </Routes>
       <Toaster />
